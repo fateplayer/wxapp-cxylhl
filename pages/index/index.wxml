@@ -14,7 +14,7 @@
   </view>
   <view class="split">
     <view class="title">
-      不宜
+      忌
     </view>
     <view class="content" wx:for="{{splitlists}}">
       <view class="content-name">{{item.name}}</view>
