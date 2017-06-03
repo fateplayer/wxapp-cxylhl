@@ -1,0 +1,72 @@
+/**index.wxss**/
+.body{
+  flex-direction:column;
+  display: flex;
+}
+.hear-text{
+  margin: 5px auto;
+}
+.date{
+  font-weight: bold;
+  text-align: center;
+}
+.good{
+  background: #ffffaa;
+  flex-direction:row;
+  position:relative;
+}
+.split{
+  background: #ffddd3;
+  flex-direction:row;
+  position:relative;
+}
+.good .title {
+    background: #ffee44;
+    width: 80px;
+    height: 150px;
+    padding-left: 20px;
+}
+.split .title {
+    background: #ff4444;
+    color: #fff;
+    white-space: nowrap;
+    width: 95px;
+    height: 150px;
+    padding-left: 5px;
+}
+.title {
+    float: left;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30pt;
+    display: flex;
+    align-items: center;
+}
+.shupai{
+  padding: 5px;
+}
+.strongtxt{
+  font-weight: bold;
+  float: left;
+}
+.content{
+  display: flex;
+  flex-direction:column;
+  padding: 5px 10px;
+}
+.content-name{
+  white-space: nowrap;
+  font-weight: bold;
+}
+.content-txt{
+  white-space: nowrap;
+  font-size: 8px;
+}
+.direction{
+  color:  blue;
+  font-weight: bold;
+}
+.start{
+  color: #f87;
+}
