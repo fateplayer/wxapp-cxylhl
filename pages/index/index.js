@@ -56,7 +56,7 @@ Page({
           week: "星期六"
         })
         break;
-      case 7:
+      case 0:
         this.setData({
           week: "星期日"
         })
@@ -150,7 +150,7 @@ function filter(activities) {
 }
 
 function isWeekend() {
-  return today.getUTCDay() == 7 || today.getUTCDay() == 6;
+  return today.getUTCDay() == 0 || today.getUTCDay() == 6;
 }
 
 // 从 activities 中随机挑选 size 个
