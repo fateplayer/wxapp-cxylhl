@@ -5,20 +5,24 @@
   </view>
   <view class="good">
     <view class="title">
-      宜
+      <text>宜</text>
     </view>
-    <view class="content" wx:for="{{goodlists}}">
-      <view class="content-name">{{item.name}}</view>
-      <view class="content-txt">{{item.good}}</view>
+    <view class="content">
+      <view class="content-max" wx:for="{{goodlists}}">
+        <view class="content-name">{{item.name}}</view>
+        <view class="content-txt">{{item.good}}</view>
+      </view>
     </view>
   </view>
   <view class="split">
     <view class="title">
-      忌
+      <text>忌</text>
     </view>
-    <view class="content" wx:for="{{splitlists}}">
-      <view class="content-name">{{item.name}}</view>
-      <view class="content-txt">{{item.bad}}</view>
+    <view class="content">
+      <view class="content-max" wx:for="{{splitlists}}">
+        <view class="content-name">{{item.name}}</view>
+        <view class="content-txt">{{item.bad}}</view>
+      </view>
     </view>
   </view>
   <view class="shupai">
@@ -35,8 +39,11 @@
     <text class="strongtxt">女神亲近指数：</text>
     <text class="start">{{stars}}</text>
   </view>
-  <view class="shupai">
-    <text class="strongtxt">项目地址：</text>
+  <view class="footer">
+    <text class="strongtxt">长按复制项目地址↓欢迎提交有含量的代码</text>
   </view>
-    <input type="text" value='https://github.com/fateplayer/wxapp-cxylhl/'></input>
+  <view class="foot">
+    <text selectable="true">https://github.com/fateplayer/wxapp-cxylhl/</text>
+  </view>
+  <text>{{lunar}}</text>
 </view>

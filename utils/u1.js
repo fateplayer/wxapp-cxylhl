@@ -33,8 +33,12 @@ var activities = [
 var tools = ["Eclipse写程序", "MSOffice写文档", "记事本写程序", "Windows8", "Linux", "MacOS", "IE", "Android设备", "iOS设备"];
 
 var varNames = ["jieguo", "huodong", "pay", "expire", "zhangdan", "every", "free", "i1", "a", "virtual", "ad", "spider", "mima", "pass", "ui"];
+var drinks = ["水", "茶", "红茶", "绿茶", "咖啡", "奶茶", "可乐", "鲜奶", "豆奶", "果汁", "果味汽水", "苏打水", "运动饮料", "酸奶", "酒"];
+var directions = ["北方", "东北方", "东方", "东南方", "南方", "西南方", "西方", "西北方"];
 module.exports = {
   activities: activities,
   tools: tools,
-  varNames: varNames
+  varNames: varNames,
+  drinks: drinks,
+  directions: directions
 }

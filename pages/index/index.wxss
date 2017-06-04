@@ -1,71 +1,98 @@
 /**index.wxss**/
-.body{
-  flex-direction:column;
+
+.body {
+  flex-direction: column;
   display: flex;
 }
-.hear-text{
+
+.hear-text {
   margin: 5px auto;
 }
-.date{
+
+.date {
   font-weight: bold;
   text-align: center;
+  font-size: 22px;
 }
-.good{
-  background: #ffffaa;
-  flex-direction:row;
-  position:relative;
+
+.good {
+  background: #ffa;
+  flex-direction: row;
+  position: relative;
+  display: flex;
 }
-.split{
+
+.split {
   background: #ffddd3;
-  flex-direction:row;
-  position:relative;
+  flex-direction: row;
+  position: relative;
+  display: flex;
 }
+
 .good .title {
-    background: #ffee44;
-    width: 80px;
-    height: 150px;
-    padding-left: 20px;
+  background: #fe4;
 }
+
 .split .title {
-    background: #ff4444;
-    color: #fff;
-    width: 80px;
-    height: 150px;
-    padding-left: 20px;
+  background: #f44;
+  color: #fff;
 }
+
 .title {
-    float: left;
-    width: 100px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30pt;
-    display: flex;
-    align-items: center;
+  width: 100px;
+  font-weight: bold;
+  font-size: 30pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.shupai{
+
+.shupai {
   padding: 5px;
 }
-.strongtxt{
+
+.strongtxt {
   font-weight: bold;
-  float: left;
 }
-.content{
+
+.content {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+}
+.content-max{
   padding: 5px 10px;
 }
-.content-name{
+.content-name {
   white-space: nowrap;
   font-weight: bold;
+  font-size: 16px;
 }
-.content-txt{
+
+.content-txt {
   white-space: nowrap;
   font-size: 8px;
 }
-.direction{
-  color:  blue;
+
+.direction {
+  color: blue;
   font-weight: bold;
 }
-.start{
+
+.start {
   color: #f87;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  border-top: 2px solid #000;
+  padding-top: 10px;
+}
+
+.foot {
+  text-align: center;
+}
+
+.foot text {
+  border-bottom: 1px solid #000;
 }

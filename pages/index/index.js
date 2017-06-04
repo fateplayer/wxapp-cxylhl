@@ -1,16 +1,14 @@
 //index.js
 //获取应用实例
 var util = require('../../utils/u1.js')
+var Lunar = require('../../utils/Lunar.js')
 var today = new Date();
 var iday = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
-var drinks = ["水", "茶", "红茶", "绿茶", "咖啡", "奶茶", "可乐", "鲜奶", "豆奶", "果汁", "果味汽水", "苏打水", "运动饮料", "酸奶", "酒"]
-var directions = ["北方", "东北方", "东方", "东南方", "南方", "西南方", "西方", "西北方"]
+var drinks = util.drinks
+var directions = util.directions
 var app = getApp()
 Page({
   data: {
-    goodlists:[],
-    splitlists:[],
-    today:''
   },
   
   onLoad: function () {
@@ -19,11 +17,14 @@ Page({
     var year = today.getFullYear()
     var month = today.getMonth()+1
     var day = today.getDate()
+    var Hours =today.getHours()
+    var Minutes = today.getMinutes()
 
     var stars=''
     this.setData({
       date: '今天是'+year + '年' + month + '月' + day+ '日  ',
-      iday: iday
+      //未知BUG
+      lunar: ''//Lunar.getLunar()
     })
     switch (week) {
       case 1:
@@ -69,6 +70,9 @@ Page({
       goodlists: pickTodaysLuck(1),
       splitlists: pickTodaysLuck(0)
     })
+  },
+  dzinput_bindfocus:function(){
+    
   },
   onShareAppMessage: function () {
     return {
