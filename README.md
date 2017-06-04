@@ -1,5 +1,5 @@
-# wxapp-程序员老黄历
-微信小程序-程序员老黄历
+# 微信小程序-程序员老黄历
+![预览图](https://github.com/fateplayer/wxapp-cxylhl/blob/screenshot/screenshot.png)
 ### Thank to
 [Yiding He](http://runjs.cn/detail/ydp3it7b)
 ### LICENSE
