@@ -39,4 +39,5 @@
     <text class="strongtxt">项目地址：</text>
   </view>
     <input type="text" value='https://github.com/fateplayer/wxapp-cxylhl/'></input>
+    <text>{{iday}}</text>
 </view>

@@ -3,20 +3,22 @@
 var util = require('../../utils/u1.js')
 var today = new Date();
 var iday = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+var drinks = ["水", "茶", "红茶", "绿茶", "咖啡", "奶茶", "可乐", "鲜奶", "豆奶", "果汁", "果味汽水", "苏打水", "运动饮料", "酸奶", "酒"]
+var directions = ["北方", "东北方", "东方", "东南方", "南方", "西南方", "西方", "西北方"]
 var app = getApp()
 Page({
   data: {
     goodlists:[],
-    splitlists:[]
+    splitlists:[],
+    today:''
   },
   
   onLoad: function () {
-    var drinks = ["水", "茶", "红茶", "绿茶", "咖啡", "奶茶", "可乐", "鲜奶", "豆奶", "果汁", "果味汽水", "苏打水", "运动饮料", "酸奶", "酒"]
-    var directions = ["北方", "东北方", "东方", "东南方", "南方", "西南方", "西方", "西北方"]
+
     var week = today.getUTCDay()
     var year = today.getFullYear()
-    var month = today.getMonth()
-    var day = today.getDay()
+    var month = today.getMonth()+1
+    var day = today.getDate()
 
     var stars=''
     this.setData({
@@ -77,20 +79,7 @@ Page({
   }
 })
 
-function pickRandom(array, size) {
-  var result = [];
 
-  for (var i = 0; i < array.length; i++) {
-    result.push(array[i]);
-  }
-
-  for (var j = 0; j < array.length - size; j++) {
-    var index = random(iday, j) % result.length;
-    result.splice(index, 1);
-  }
-
-  return result;
-}
 function star(num) {
   var result = "";
   var i = 0;
