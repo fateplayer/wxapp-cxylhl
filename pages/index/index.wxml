@@ -2,9 +2,8 @@
 <view class="body">
   <view class="date">
     <picker class="pickerdate" mode="date" start="{{starttimes}}" end="2999-12-12" bindchange="datePickerBindchange">
-      {{xin}}
+      {{date}}
     </picker>
-    <text>{{date}}</text>
   </view>
   <view class="good">
     <view class="title">

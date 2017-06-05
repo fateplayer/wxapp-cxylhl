@@ -19,7 +19,9 @@
 
 .pickerdate {
   background-color: #fff;
-  padding-right: 10px
+  padding-left: 10px;
+  margin-right: 0px;
+  float: right;
 }
 
 .good {
@@ -78,7 +80,6 @@
 }
 
 .content-txt {
-  white-space: nowrap;
   font-size: 8px;
 }
 

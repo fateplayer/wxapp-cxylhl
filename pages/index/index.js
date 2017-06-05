@@ -5,6 +5,7 @@ var util = require('../../utils/u1.js')
 
 var drinks = util.drinks
 var directions = util.directions
+var today = new Date()
 var app = getApp()
 Page({
   data: {
@@ -12,7 +13,6 @@ Page({
   },
 
   onLoad: function () {
-    var today = new Date();
     var iday = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
     var week = getweek(today.getUTCDay())
     var year = today.getFullYear()
@@ -45,7 +45,6 @@ Page({
     var iday = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
     this.setData({
       date: year + '年' + month + '月' + day + '日  ' + week,
-      starttimes: year + '-' + month + '-' + day,
       drinks: pickRandom(iday, drinks, 2),
       direction: directions[random(iday, 2) % directions.length],
       stars: star(random(iday, 6) % 5 + 1),
