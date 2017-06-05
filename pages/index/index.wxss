@@ -11,8 +11,15 @@
 
 .date {
   font-weight: bold;
-  text-align: center;
+  justify-content: center;
   font-size: 22px;
+  flex-direction: row;
+  display: flex;
+}
+
+.pickerdate {
+  background-color: #fff;
+  padding-right: 10px
 }
 
 .good {
@@ -59,9 +66,11 @@
   display: flex;
   flex-direction: column;
 }
-.content-max{
+
+.content-max {
   padding: 5px 10px;
 }
+
 .content-name {
   white-space: nowrap;
   font-weight: bold;

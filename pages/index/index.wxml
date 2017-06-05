@@ -1,7 +1,10 @@
 <!--index.wxml-->
 <view class="body">
   <view class="date">
-    <text>{{date}}{{week}}</text>
+    <picker class="pickerdate" mode="date" start="{{starttimes}}" end="2999-12-12" bindchange="datePickerBindchange">
+      {{xin}}
+    </picker>
+    <text>{{date}}</text>
   </view>
   <view class="good">
     <view class="title">
@@ -45,5 +48,4 @@
   <view class="foot">
     <text selectable="true">https://github.com/fateplayer/wxapp-cxylhl/</text>
   </view>
-  <text>{{lunar}}</text>
 </view>
