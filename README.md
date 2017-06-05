@@ -11,3 +11,7 @@
 [Yiding He的知乎](https://www.zhihu.com/people/he-yiding-23/)
 
 感谢支持!
+
+
+还未上线，先放二维码
+![二维码](https://github.com/fateplayer/wxapp-cxylhl/blob/screenshot/wxapp-cxylhl-QRcode.jpg)
